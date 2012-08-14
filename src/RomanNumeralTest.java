@@ -23,6 +23,25 @@ public class RomanNumeralTest {
         assertEquals(4, actual);
     }
 
+    @Test
+    public void TestXIV(){
+        RomanNumeralCalculator rnc = new RomanNumeralCalculator();
+        int actual = rnc.Convert("XIV");
+        assertEquals(14, actual);
+    }
 
+    @Test
+    public void TestIXX(){
+        RomanNumeralCalculator rnc = new RomanNumeralCalculator();
+        int actual = rnc.Convert("IXX");
+        assertEquals(19, actual);
+    }
+
+    @Test
+    public void TestMCL(){
+        RomanNumeralCalculator rnc = new RomanNumeralCalculator();
+        int actual = rnc.Convert("MCIL");
+        assertEquals(1149, actual);
+    }
 
 }
